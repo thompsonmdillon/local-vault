@@ -3,9 +3,6 @@ package cli;
 import java.util.Scanner;
 
 public class WelcomeMessage{
-    // Define username once user has created their username.
-    String username;
-
     public static void welcome() {
         System.out.println("====================================================================================================================");
         System.out.println("""
