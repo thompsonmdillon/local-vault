@@ -1,0 +1,16 @@
+{
+  "Username": "User",
+  "entries": [
+    {
+      "entryName": "GitHub",
+      "service": "GitHub",
+      "email": "example@gmail.com",
+      "additionalNotes": [
+        {
+          "GitHub token": "example token",
+          "other notes": "example note"
+        }
+      ]
+    }
+  ]
+}
