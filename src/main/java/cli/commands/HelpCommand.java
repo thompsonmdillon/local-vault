@@ -14,8 +14,8 @@ public class HelpCommand {
         further help, contact the developer if he's available. 
         """);
         System.out.println("""
-        The commands available to you are listed below. Type the number 'e' in the command line and then press enter to 
-        exit the help menu and return to the command menu. """);
+        The commands available to you are listed below. Type and enter "8" or type and enter "exit" in the command line 
+        and then press enter to exit the help menu and return to the command menu. """);
         System.out.println();
         System.out.println("====================================================================================================================");
         System.out.println();
@@ -34,7 +34,7 @@ public class HelpCommand {
         System.out.println("====================================================================================================================");
         System.out.println();
         String exitInput = exitMenu.nextLine();
-        if(exitInput.equalsIgnoreCase("e")){
+        if(exitInput.equals("8") || exitInput.equalsIgnoreCase("exit")){
             System.out.print("\033[H\033[2J");
             System.out.flush();
             CommandMenu.menu();

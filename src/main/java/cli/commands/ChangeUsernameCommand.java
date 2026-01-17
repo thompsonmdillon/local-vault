@@ -18,8 +18,8 @@ public class ChangeUsernameCommand {
         System.out.println("====================================================================================================================");
         System.out.println();
         System.out.println(""" 
-                Type 8 or exit if you wish to keep your current username. Otherwise, please type what you would like to 
-                change your username to and press enter: """);
+                Type and enter "8" or type and enter "exit" if you wish to keep your current username. Otherwise, please 
+                type what you would like to change your username to and press enter: """);
         System.out.println();
         System.out.println("====================================================================================================================");
         String newUsername = scanner.nextLine();
