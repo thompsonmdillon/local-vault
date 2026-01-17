@@ -13,7 +13,7 @@ public class ChangeUsernameCommand {
         System.out.println();
         System.out.println("====================================================================================================================");
         System.out.println();
-        System.out.println("Your current username is USERNAME HERE I KNOW HOW TO STORE PERSISTENTLY");
+        System.out.println("Your current username is USERNAME HERE WHEN I KNOW HOW TO STORE PERSISTENTLY");
         System.out.println();
         System.out.println("====================================================================================================================");
         System.out.println();
@@ -36,4 +36,5 @@ public class ChangeUsernameCommand {
             System.out.println();
         }
     }
+
 }
