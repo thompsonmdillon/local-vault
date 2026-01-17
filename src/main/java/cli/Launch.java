@@ -83,22 +83,22 @@ public class Launch {
     public static boolean checkReturningUserPassword(){
         // Instead of user, print the persistently stored username to welcome the user back.
         Scanner scanner = new Scanner(System.in);
-        System.out.println("====================================================================================================================");
-        System.out.println();
-        System.out.println("Welcome back user! Please enter your password to enter LocalVault:");
-        System.out.println();
-        System.out.println("====================================================================================================================");
-        String userPasswordAttempt = scanner.nextLine();
-        if (userPasswordAttempt.equals(password)){
-            System.out.println();
+        boolean passwordLoop = true;
+        while(passwordLoop){
             System.out.println("================================================================================================================");
             System.out.println();
-            System.out.println("Success! Proceeding to user's LocalVault.");
+            System.out.println("Welcome back user! Please enter your password to enter LocalVault:");
             System.out.println();
-            return true;
-        } else {
-            boolean passwordLoop = true;
-            while (passwordLoop){
+            System.out.println("================================================================================================================");
+            String userPasswordAttempt = scanner.nextLine();
+            if (userPasswordAttempt.equals(password)){
+                System.out.println();
+                System.out.println("============================================================================================================");
+                System.out.println();
+                System.out.println("Success! Proceeding to user's LocalVault.");
+                System.out.println();
+                passwordLoop = false;
+            } else {
                 System.out.println();
                 System.out.println("Incorrect password. Please try again.");
                 System.out.println();
