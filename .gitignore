@@ -1,0 +1,10 @@
+# Root Directory Ignored Directories and Files
+
+# IntelliJ IDEA
+.idea/
+
+# Build / output directories
+out/
+
+# LocalVault user data
+vault.json
