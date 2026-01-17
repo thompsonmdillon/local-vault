@@ -1,6 +1,4 @@
 package cli;
-// Source: https://www.w3schools.com/java/ref_string_equals.asp
-
 import cli.commands.*;
 import java.util.Scanner;
 
@@ -8,7 +6,6 @@ public class CommandMenu {
     public static void menu() {
         System.out.println();
         Scanner scanner = new Scanner(System.in);
-        // While loop, to continue until the user enters exit.
         while (true) {
             System.out.println("====================================================================================================================");
             System.out.println();
