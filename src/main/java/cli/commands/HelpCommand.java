@@ -1,6 +1,5 @@
 package cli.commands;
 import cli.CommandMenu;
-
 import java.util.Scanner;
 
 public class HelpCommand {

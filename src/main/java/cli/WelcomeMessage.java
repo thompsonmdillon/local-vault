@@ -3,7 +3,6 @@ package cli;
 public class WelcomeMessage{
     public static void welcome() {
         System.out.println("====================================================================================================================");
-        System.out.println();
         System.out.println("""
                 Welcome to LocalVault - Version 0.0.1! We appreciate your use of our application. If you have any questions, 
                 recommendations, or requests, please try to contact our developer. This application remains in a state of 

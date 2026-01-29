@@ -4,11 +4,9 @@ import java.util.Scanner;
 
 public class CommandMenu {
     public static void menu() {
-        System.out.println();
         Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.println("====================================================================================================================");
-            System.out.println();
             System.out.println("""
                     Select one of the following commands by typing the corresponding digit or name of the command in the
                     command line and then press enter. Users can search for an entry, add an entry, delete an entry, 
@@ -22,9 +20,7 @@ public class CommandMenu {
             System.out.println("6) change password");
             System.out.println("7) help");
             System.out.println("8) exit");
-            System.out.println();
             System.out.println("====================================================================================================================");
-            System.out.println();
             String userInput = scanner.nextLine();
             if (userInput.isEmpty()) {
                 System.out.println("Invalid command entered. Please try again.");
