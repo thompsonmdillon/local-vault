@@ -5,16 +5,11 @@ import java.util.Scanner;
 public class AddEntryCommand {
 
     public static void add() {
-        String accountCredential;
-        String accountCredentialConfirm;
-        String entryName;
-        String password;
-        String passwordConfirm;
-        String continueOrFinished;
+        String entryName, accountCredential, accountCredentialConfirm, password, passwordConfirm, continueOrFinished;
         Scanner scanner = new Scanner(System.in);
         System.out.println("====================================================================================================================");
         System.out.println("""
-                Create a new entry. Type 'exit' at any time to stop the entry creation process and return to the command menu. 
+                Create a new entry. Type and enter 'exit' at any time to stop the entry creation process and return to the command menu. 
                 Please note that your account credentials, username or password, may not be 'exit'. If so, the add entry menu 
                 will terminate and you will be brought back to the command menu. Thus, if you have any usernames or passwords
                 that are 'exit' please change them if you wish to store them as an entry in this application.""");
@@ -23,7 +18,7 @@ public class AddEntryCommand {
         entryName = scanner.nextLine();
         System.out.println("====================================================================================================================");
         if (entryName.equalsIgnoreCase("exit")) {
-            System.out.println("Exiting the add entry menu...");
+            System.out.println("New entry not added. Exiting the add entry menu. Returning you to the command menu...");
             CommandMenu.menu();
             return;
         }
@@ -31,14 +26,14 @@ public class AddEntryCommand {
         accountCredential = scanner.nextLine();
         System.out.println("====================================================================================================================");
         if (accountCredential.equalsIgnoreCase("exit")) {
-            System.out.println("Exiting the add entry menu...");
+            System.out.println("New entry not added. Exiting the add entry menu. Returning you to the command menu...");
             CommandMenu.menu();
             return;
         }
         System.out.println("Please enter the same email, username, or account credential as the one above to confirm it: ");
         accountCredentialConfirm = scanner.nextLine();
         if (accountCredentialConfirm.equalsIgnoreCase("exit")) {
-            System.out.println("Exiting the add entry menu...");
+            System.out.println("New entry not added. Exiting the add entry menu. Returning you to the command menu...");
             CommandMenu.menu();
             return;
         }
@@ -49,7 +44,7 @@ public class AddEntryCommand {
             accountCredential = scanner.nextLine();
             System.out.println("====================================================================================================================");
             if (accountCredential.equalsIgnoreCase("exit")) {
-                System.out.println("Exiting the add entry menu...");
+                System.out.println("New entry not added. Exiting the add entry menu. Returning you to the command menu...");
                 CommandMenu.menu();
                 return;
             }
@@ -57,7 +52,7 @@ public class AddEntryCommand {
             accountCredentialConfirm = scanner.nextLine();
             System.out.println("====================================================================================================================");
             if (accountCredentialConfirm.equalsIgnoreCase("exit")) {
-                System.out.println("Exiting the add entry menu...");
+                System.out.println("New entry not added. Exiting the add entry menu. Returning you to the command menu...");
                 CommandMenu.menu();
                 return;
             }
@@ -68,14 +63,14 @@ public class AddEntryCommand {
             password = scanner.nextLine();
             System.out.println("====================================================================================================================");
             if (password.equalsIgnoreCase("exit")) {
-                System.out.println("Exiting the add entry menu...");
+                System.out.println("New entry not added. Exiting the add entry menu. Returning you to the command menu...");
                 CommandMenu.menu();
                 return;
             }
             System.out.println("Please enter the same password, token, or some other password credential as the one above to confirm it: ");
             passwordConfirm = scanner.nextLine();
             if (passwordConfirm.equalsIgnoreCase("exit")) {
-                System.out.println("Exiting the add entry menu...");
+                System.out.println("New entry not added. Exiting the add entry menu. Returning you to the command menu...");
                 CommandMenu.menu();
                 return;
             }
@@ -86,7 +81,7 @@ public class AddEntryCommand {
                 password = scanner.nextLine();
                 System.out.println("====================================================================================================================");
                 if (password.equalsIgnoreCase("exit")) {
-                    System.out.println("Exiting the add entry menu...");
+                    System.out.println("New entry not added. Exiting the add entry menu. Returning you to the command menu...");
                     CommandMenu.menu();
                     return;
                 }
@@ -94,7 +89,7 @@ public class AddEntryCommand {
                 passwordConfirm = scanner.nextLine();
                 System.out.println("====================================================================================================================");
                 if (passwordConfirm.equalsIgnoreCase("exit")) {
-                    System.out.println("Exiting the add entry menu...");
+                    System.out.println("New entry not added. Exiting the add entry menu. Returning you to the command menu...");
                     CommandMenu.menu();
                     return;
                 }
@@ -106,7 +101,7 @@ public class AddEntryCommand {
             if (continueOrFinished.equalsIgnoreCase("continue")) {
                 add();
             } else if (continueOrFinished.equalsIgnoreCase("exit")) {
-                System.out.println("Exiting the add entry menu...");
+                System.out.println("New entry added. Exiting the add entry menu. Returning you to the command menu...");
                 CommandMenu.menu();
             }
         }

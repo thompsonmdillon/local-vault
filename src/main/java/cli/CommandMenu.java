@@ -3,6 +3,7 @@ import cli.commands.*;
 import java.util.Scanner;
 
 public class CommandMenu {
+
     public static void menu() {
         Scanner scanner = new Scanner(System.in);
         while (true) {
