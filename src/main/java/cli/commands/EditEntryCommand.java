@@ -4,11 +4,8 @@ import java.util.Scanner;
 public class EditEntryCommand {
     public static void edit(){
         Scanner scanner = new Scanner(System.in);
-        System.out.println();
         System.out.println("====================================================================================================================");
-        System.out.println();
         System.out.println("You have selected the INSERT ENTRY HERE ONCE STORED PERSISTENTLY entry to edit.");
-        System.out.println();
         System.out.println("====================================================================================================================");
         System.out.println();
         System.out.println(""" 
