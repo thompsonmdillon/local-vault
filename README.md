@@ -19,7 +19,10 @@ in a while.
 and LinkedList. This was very helpful because initially I just wanted to
 8. ChatGPT, I used AI to ask questions about java syntax and logic. Particularly, for things that I was not able to figure 
 out or was confused about if I could not come to a conclusive answer myself or find the answer online or in some sort
-of documentation. 
+of documentation. Also, I used it to assist with troubleshooting Maven dependency configuration and resolving Gson 
+library import issues.
+9. https://maven.apache.org/guides/introduction/introduction-to-the-pom.html, read about Project Object Model (POM) in 
+Maven. 
 
 ------------------------------------------------------------------------------------------------------------------------
 
